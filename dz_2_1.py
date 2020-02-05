@@ -20,7 +20,7 @@ def insert(A):
             j = j - 1
         A[j] = v
 
-def select(A):
+def select(A): ## сотрировка не работает, не понимаю почему....
     for i in range(len(A)-1):
         m = i
         j = i+1
