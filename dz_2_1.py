@@ -28,7 +28,7 @@ def select(A): ## сотрировка не работает, не понима�
             if A[j] < A[m]:
                 m = j
             j = j+1
-            A[i], A[m] = A[m], A[i]
+        A[i], A[m] = A[m], A[i]
 
 
 table = prettytable.PrettyTable(["Размер списка", "Время пузырька", "Время Insert", "Время Select"])
@@ -61,7 +61,7 @@ for N in range(1000,5001,1000):
 
     D = A.copy()
     #select(D)
-    #print(D)
+   # print(D)
 
     t1 = datetime.datetime.now()
     BubbleSort(A)
